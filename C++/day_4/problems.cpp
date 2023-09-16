@@ -44,7 +44,7 @@ int main()
     {
         int num;
         cout << "Enter the number to reverse it" << endl;
-        cin>>num;
+        cin >> num;
         int ans = reverse(num);
         cout << "The reversed number is : " << ans << endl;
     }
