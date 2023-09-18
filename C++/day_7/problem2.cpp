@@ -1,13 +1,13 @@
 /*
-Given an array of n integers, find the largest element and return if from function.
-int findMax(int nums[], int n);
+Given an array of n integers, find the smallest element and return if from function.
+int findMin(int nums[], int n);
 */
 
 #include <iostream>
 #include <limits.h>
 using namespace std;
 
-int findMax(int *arr, int n);
+int findMin(int *arr, int n);
 void takeInput(int size, int *arr)
 {
     for (int i = 0; i < size; i++)
@@ -23,19 +23,19 @@ int main()
     int *arr = new int[size];
     takeInput(size, arr);
 
-    int ans = findMax(arr, size);
-    cout << "The maximum is : " << ans << endl;
+    int ans = findMin(arr, size);
+    cout << "The minimum is : " << ans << endl;
 
     return 0;
 }
 
-int findMax(int *arr, int size)
+int findMin(int *arr, int size)
 {
-    int mx = INT_MIN;
+    int mn = INT_MAX;
     for (int i = 0; i < size; i++)
     {
-        if (arr[i] > mx)
-            mx = arr[i];
+        if (arr[i] < mn)
+            mn = arr[i];
     }
-    return mx;
+    return mn;
 }
