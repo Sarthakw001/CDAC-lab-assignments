@@ -1,62 +1,73 @@
 #include <iostream>
-#include <string>
+#include <cstring>
+
 using namespace std;
 
-class BigInt
-{
+class String {
 private:
-    string value;
+    char* data;
 
 public:
-    BigInt(const string &str) : value(str) {}
+    String() : data(nullptr) {}
 
-    bool operator<(const BigInt &other) const
-    {
-        return value < other.value;
+    String(const char* str) {
+        data = new char[strlen(str) + 1];
+        strcpy(data, str);
     }
 
-    bool operator<=(const BigInt &other) const
-    {
-        return value <= other.value;
+    String(const String& other) {
+        if (other.data) {
+            data = new char[strlen(other.data) + 1];
+            strcpy(data, other.data);
+        } else {
+            data = nullptr;
+        }
     }
 
-    bool operator==(const BigInt &other) const
-    {
-        return value == other.value;
+    ~String() {
+        delete[] data;
     }
 
-    bool operator!=(const BigInt &other) const
-    {
-        return value != other.value;
+    String& operator=(const String& other) {
+        if (this != &other) {
+            delete[] data;
+            if (other.data) {
+                data = new char[strlen(other.data) + 1];
+                strcpy(data, other.data);
+            } else {
+                data = nullptr;
+            }
+        }
+        return *this;
     }
 
-    bool operator>(const BigInt &other) const
-    {
-        return value > other.value;
+    int length() const {
+        return data ? strlen(data) : 0;
     }
 
-    bool operator>=(const BigInt &other) const
-    {
-        return value >= other.value;
+    const char* c_str() const {
+        return data ? data : "";
     }
 
-    string toString() const
-    {
-        return value;
+    void display() const {
+        cout << c_str();
     }
 };
 
-int main()
-{
-    BigInt bigint1("123456789012345678901234567890");
-    BigInt bigint2("987654321098765432109876543210");
+int main() {
+    String str1("Hello");
+    String str2("World");
 
-    cout << (bigint1 < bigint2) << endl;  // true
-    cout << (bigint1 <= bigint2) << endl; // true
-    cout << (bigint1 == bigint2) << endl; // false
-    cout << (bigint1 != bigint2) << endl; // true
-    cout << (bigint1 > bigint2) << endl;  // false
-    cout << (bigint1 >= bigint2) << endl; // false
+    String str3 = str1;
+    cout << "str3: ";
+    str3.display();
+    cout << endl;
+
+    String str4;
+    str4 = str2;
+    cout << "str4: ";
+    str4.display();
+    cout << endl;
 
     return 0;
 }
