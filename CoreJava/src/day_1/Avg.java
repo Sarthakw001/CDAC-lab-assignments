@@ -5,7 +5,7 @@ class Avg{
 	Scanner sc = new Scanner(System.in);
 	if(sc.hasNextDouble()){
 	    double x = sc.nextDouble();
-	    if(sc.hasNextouble()){
+	    if(sc.hasNextDouble()){
 	        double y = sc.nextDouble();
 	        System.out.println("Average is : " +(x+y)/2);
 	    }else {
