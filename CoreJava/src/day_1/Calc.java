@@ -38,7 +38,6 @@ class Calc {
 				case 4:
 					System.out.println("Answer is : " + (num1 / num2));
 					break;
-
 			}
 			sc.close();
 		}
