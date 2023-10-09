@@ -1,4 +1,5 @@
 package com.cdac.core;
+
 import java.lang.Math;
 
 public class Point2D {

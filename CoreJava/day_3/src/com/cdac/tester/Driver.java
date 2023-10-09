@@ -1,4 +1,5 @@
 package com.cdac.tester;
+
 import com.cdac.core.Point2D;
 import java.util.Scanner;
 
