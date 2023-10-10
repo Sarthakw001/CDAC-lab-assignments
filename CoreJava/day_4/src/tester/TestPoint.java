@@ -1,4 +1,5 @@
 package tester;
+
 import java.util.Scanner;
 import core.Point2D;
 
@@ -7,6 +8,7 @@ class TestPoint {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("How many points you want to plot");
 		Point2D[] points = new Point2D[sc.nextInt()];
+		int counter = 0;
 		boolean flag = false;
 		while (!flag) {
 			System.out.println("1 -> Plot points");
@@ -22,24 +24,20 @@ class TestPoint {
 					break;
 
 				case 1:
-					for (int i = 0; i < points.length; i++) { // 1. Plot all points
+					if (counter < points.length && points[counter] == null) {
 						System.out.println("Enter x & y Co-ordinate");
-						double x = sc.nextInt();
-						double y = sc.nextInt();
-						Point2D temp = new Point2D(x, y);
-						for (int j = 0; j < i - 1; j++) {
-							if (points[j].isEqual(temp)) {
-								System.out.println("Point already plotted ! exit from app .... Try again");
-								System.exit(0);
-							}
-						}
-						points[i] = temp;
+						points[counter] = new Point2D(sc.nextInt(), sc.nextInt());
+						counter++;
+					} else {
+						System.out.println("Already plotted or Limit excedded");
 					}
 					break;
 
 				case 2:
 					for (Point2D p : points) { // 2. Display all points
-						System.out.println(p.show());
+						if (p != null) {
+							System.out.println(p.show());
+						}
 					}
 					break;
 
@@ -48,10 +46,10 @@ class TestPoint {
 					int p1 = sc.nextInt();
 					int p2 = sc.nextInt();
 
-					if (points[p1].isEqual(points[p2])) {
+					if (p1 < counter && p2 < counter && points[p1].isEqual(points[p2])) {
 						System.out.println("Indices of points provided by you are equal");
 					} else {
-						System.out.println("Indices of points provided by you are NOT equal");
+						System.out.println("Indices of points provided by you are NOT equal or not plotted");
 					}
 					break;
 
