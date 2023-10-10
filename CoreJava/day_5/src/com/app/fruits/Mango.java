@@ -11,9 +11,9 @@ public class Mango extends Fruit{
 
     @Override
     public String taste(){
-        return "Taste is sweet";
+        return "sweet";
     }
-
+    
     public void pulp(){
         System.out.println(getName()+" : Creating Pulp");
     }

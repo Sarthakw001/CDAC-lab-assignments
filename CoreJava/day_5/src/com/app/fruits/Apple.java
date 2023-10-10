@@ -1,6 +1,6 @@
 package com.app.fruits;
 public class Apple extends Fruit{
-    public Apple(String name,double weight,String color,boolean fresh){
+    public Apple(String name,double weight,String color){
         super(name, weight, color);
     }
 
@@ -11,7 +11,7 @@ public class Apple extends Fruit{
 
     @Override
     public String taste(){
-        return "Taste is sweet & sour";
+        return "sweet & sour";
     }
 
     public void jam(){
