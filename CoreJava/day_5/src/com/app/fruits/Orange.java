@@ -11,7 +11,7 @@ public class Orange extends Fruit{
 
     @Override
     public String taste(){
-        return "Taste is sour";
+        return "sour";
     }
 
     public void juice(){
