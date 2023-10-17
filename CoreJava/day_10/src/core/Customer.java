@@ -18,6 +18,33 @@ public class Customer {
         return new Customer(firstName, lastName, email, password, dateOfBirth, registrationAmount);
     }
 
+    public static void changePassword(String email, String currPassword, String newPassword, List<Customer> customers) {
+        for (Customer c : customers) {
+            if (email.equals(c.getEmail())) {
+                c.setPassword(newPassword);
+                return;
+            }
+        }
+    }
+
+    public static boolean unSubscribe(String email, List<Customer> customers) {
+        for (Customer c : customers) {
+            if (email.equals(c.getEmail())) {
+                c.setSubscribe();
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public static boolean signIn(String email, String password, List<Customer> customers) {
+        for (Customer c : customers) {
+            if (email.equals(c.getEmail()) && password.equals(c.getPassword())) {
+                return true;
+            }
+        }
+        return false;
+    }
     public Customer(String firstName, String lastName, String email, String password, LocalDate dateOfBirth,
             double registrationAmount) {
         Customer.id = Customer.id + 1;
@@ -50,34 +77,6 @@ public class Customer {
         this.password = password;
     }
 
-    public boolean changePassword(String email, String currPassword, String newPassword, List<Customer> customers) {
-        for (Customer c : customers) {
-            if (email.equals(c.getEmail()) && currPassword.equals(c.getPassword())) {
-                c.setPassword(newPassword);
-                return true;
-            }
-        }
-        return false;
-    }
-
-    public boolean unSubscribe(String email, List<Customer> customers) {
-        for (Customer c : customers) {
-            if (email.equals(c.getEmail())) {
-                c.setSubscribe();
-                return true;
-            }
-        }
-        return false;
-    }
-
-    public boolean signIn(String email, String password, List<Customer> customers) {
-        for (Customer c : customers) {
-            if (email.equals(c.getEmail()) && password.equals(c.getPassword())) {
-                return true;
-            }
-        }
-        return false;
-    }
 
     @Override
     public boolean equals(Object o) {
