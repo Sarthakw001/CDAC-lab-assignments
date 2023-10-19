@@ -1,9 +1,9 @@
 package core;
 
 import java.time.LocalDate;
-import java.util.List;
+import java.util.Map;
 
-public class Customer {
+public class Customer1 {
     private static int id = 0;
     private String firstName;
     private String lastName;
@@ -13,41 +13,37 @@ public class Customer {
     private boolean subscribe;
     private double registrationAmount;
 
-    public static Customer signUp(String firstName, String lastName, String email, String password,
+    public static Customer1 signUp(String firstName, String lastName, String email, String password,
             LocalDate dateOfBirth, double registrationAmount) {
-        return new Customer(firstName, lastName, email, password, dateOfBirth, registrationAmount);
+        return new Customer1(firstName, lastName, email, password, dateOfBirth, registrationAmount);
     }
 
-    public static void changePassword(String email, String currPassword, String newPassword, List<Customer> customers) {
-        for (Customer c : customers) {
-            if (email.equals(c.getEmail())) {
-                c.setPassword(newPassword);
-                return;
-            }
+    public static void changePassword(String email, String newPassword, Map<String,Customer1> customers) {
+        Customer1 cv = customers.get(email);
+        cv.setPassword(newPassword);
+    }
+
+    public static boolean unSubscribe(String email, Map<String,Customer1> customers) {
+        if(customers.containsKey(email)){
+            Customer1 cv = customers.get(email);
+            cv.setSubscribe();
+            return true;
         }
+        return false;
     }
 
-    public static boolean unSubscribe(String email, List<Customer> customers) {
-        for (Customer c : customers) {
-            if (email.equals(c.getEmail())) {
-                c.setSubscribe();
+    public static boolean signIn(String email, String password, Map<String,Customer1> customers) {
+        if(customers.containsKey(email)){
+            Customer1 cv = customers.get(email);
+            if(cv.password.equals(password)){
                 return true;
             }
         }
         return false;
     }
-
-    public static boolean signIn(String email, String password, List<Customer> customers) {
-        for (Customer c : customers) {
-            if (email.equals(c.getEmail()) && password.equals(c.getPassword())) {
-                return true;
-            }
-        }
-        return false;
-    }
-    public Customer(String firstName, String lastName, String email, String password, LocalDate dateOfBirth,
+    public Customer1(String firstName, String lastName, String email, String password, LocalDate dateOfBirth,
             double registrationAmount) {
-        Customer.id = Customer.id + 1;
+        Customer1.id = Customer1.id + 1;
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
@@ -57,7 +53,7 @@ public class Customer {
         this.registrationAmount = registrationAmount;
     }
 
-    public Customer(String email) {
+    public Customer1(String email) {
         this.email = email;
     }
 
@@ -80,8 +76,8 @@ public class Customer {
 
     @Override
     public boolean equals(Object o) {
-        if (o instanceof Customer) {
-            return this.email.equals(((Customer) o).email);
+        if (o instanceof Customer1) {
+            return this.email.equals(((Customer1) o).email);
         }
         return false;
     }

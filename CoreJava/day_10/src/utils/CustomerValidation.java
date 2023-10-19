@@ -1,14 +1,16 @@
 package utils;
 
 import java.time.LocalDate;
-import java.util.HashMap;
+import java.util.List;
+
 import core.Customer;
 import core.ServicePlan;
 import customException.CustomerException;
 
 public class CustomerValidation {
-    public static void duplicateUser(String email, HashMap<String,Customer> customers) throws CustomerException {
-        if (customers.containsKey(email)) {
+    public static void duplicateUser(String email, List<Customer> customers) throws CustomerException {
+        Customer newCustomer = new Customer(email);
+        if (customers.contains(newCustomer)) {
             throw new CustomerException("User Already exists in Database. Can't create !!!!");
         }
     }
@@ -31,7 +33,7 @@ public class CustomerValidation {
     }
 
     public static Customer validateUser(String firstName, String lastName, String email, String password, String date,
-            double registrationAmount, HashMap<String,Customer> customers) throws CustomerException {
+            double registrationAmount, List<Customer> customers) throws CustomerException {
 
         duplicateUser(email, customers);
         validatePlanAmount(registrationAmount);

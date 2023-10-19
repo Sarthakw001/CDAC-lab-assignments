@@ -1,6 +1,5 @@
 package core;
 
-import java.time.LocalDate;
 
 public class Customer {
     private int id;
@@ -18,10 +17,5 @@ public class Customer {
 
     public String toString() {
         return "Customer [id=" + id + ", name=" + name + ", address=" + address + "]";
-    }
-
-    public static Customer signUp(String firstName, String lastName, String email, String password, LocalDate dob,
-            double registrationAmount) {
-        return null;
     }
 }

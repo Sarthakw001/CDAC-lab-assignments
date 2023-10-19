@@ -1,15 +1,15 @@
 package utils;
 
 import java.time.LocalDate;
-import java.util.List;
-import core.Customer;
+import java.util.Map;
+
+import core.Customer1;
 import core.ServicePlan;
 import customException.CustomerException;
 
 public class CustomerValidation {
-    public static void duplicateUser(String email, List<Customer> customers) throws CustomerException {
-        Customer newCustomer = new Customer(email);
-        if (customers.contains(newCustomer)) {
+    public static void duplicateUser(String email, Map<String,Customer1> customers) throws CustomerException {
+        if (customers.containsKey(email)) {
             throw new CustomerException("User Already exists in Database. Can't create !!!!");
         }
     }
@@ -31,13 +31,13 @@ public class CustomerValidation {
         return dob;
     }
 
-    public static Customer validateUser(String firstName, String lastName, String email, String password, String date,
-            double registrationAmount, List<Customer> customers) throws CustomerException {
+    public static Customer1 validateUser(String firstName, String lastName, String email, String password, String date,
+            double registrationAmount, Map<String,Customer1> customers) throws CustomerException {
 
         duplicateUser(email, customers);
         validatePlanAmount(registrationAmount);
         LocalDate dob = validateDateOfBirth(date);
 
-        return Customer.signUp(firstName, lastName, email, password, dob, registrationAmount);
+        return Customer1.signUp(firstName, lastName, email, password, dob, registrationAmount);
     }
 }
