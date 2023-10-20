@@ -15,7 +15,7 @@ public class Test4 {
 		System.out.println(s1==s3);//f
 		System.out.println(s1==s4);//f
 		s1=s2=s3=s4=null;//How many objs are marked for GC : 1
-		String s5="hello";//s5 --> already existing string in literal pool
+		// String s5="hello";//s5 --> already existing string in literal pool
 			
 
 	}
