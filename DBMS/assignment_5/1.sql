@@ -1,6 +1,6 @@
 -- Assignment 5 : 
 
-*************************************************************************** 
+********************************************************************************************************************** 
 
  1. select first_name as worker_name from worker;
 
@@ -79,3 +79,7 @@
 38. select department,sum(salary) from worker group by department; 
 
 39.select first_name,last_name,salary from worker where salary = (select max(salary) from worker);
+
+
+
+****************************************************************************************************************
