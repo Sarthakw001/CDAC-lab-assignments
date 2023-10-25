@@ -1,12 +1,12 @@
 package core;
 
 public class GrowableStack implements Stack {
-    private Customer[] cst;
+    private Customer3[] cst;
     private int size = STACK_SIZE;
     private int top;
 
     public GrowableStack() {
-        cst = new Customer[size];
+        cst = new Customer3[size];
         this.top = -1;
     }
 
@@ -19,13 +19,13 @@ public class GrowableStack implements Stack {
     }
 
     @Override
-    public void push(Customer c) {
+    public void push(Customer3 c) {
         if (isFull()) {
-            size++;
-            Customer[] temp = new Customer[cst.length];
+            size *= 2;
+            Customer3[] temp = new Customer3[cst.length];
             for (int i = 0; i < cst.length; i++)
                 temp[i] = cst[i];
-            cst = new Customer[size];
+            cst = new Customer3[size];
             for (int i = 0; i < size - 1; i++)
                 cst[i] = temp[i];
             cst[top + 1] = c;
@@ -44,6 +44,13 @@ public class GrowableStack implements Stack {
             System.out.println(cst[top]);
             cst[top] = null;
             top--;
+        }
+    }
+
+    @Override
+    public void display(){
+        for(Customer3 c : cst){
+            System.out.println(c);
         }
     }
 }

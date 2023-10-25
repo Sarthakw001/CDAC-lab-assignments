@@ -23,6 +23,7 @@ public class Driver {
                         System.out.println();
                         System.out.println("1 -> Push customer to fixed Stack");
                         System.out.println("2 -> Pop customer from fixed Stack");
+                        System.out.println("3 -> Display contents of Stack");
                         System.out.println("0 -> Exit from fixed stack");
                         int option1 = sc.nextInt();
                         switch (option1) {
@@ -35,11 +36,14 @@ public class Driver {
                                 String name = sc.next();
                                 System.out.println("Enter customer Address");
                                 String address = sc.next();
-                                Customer c = new Customer(id, name, address);
+                                Customer3 c = new Customer3(id, name, address);
                                 st.push(c);
                                 break;
                             case 2:
                                 st.pop();
+                                break;
+                            case 3:
+                                st.display();
                                 break;
                             case 0:
                                 flag1 = false;
@@ -55,6 +59,7 @@ public class Driver {
                         System.out.println();
                         System.out.println("1 -> Push customer to Growable Stack");
                         System.out.println("2 -> Pop customer from Growable Stack");
+                        System.out.println("3 -> Display contents of Stack");
                         System.out.println("0 -> Exit from Growable stack");
                         int option1 = sc.nextInt();
                         switch (option1) {
@@ -67,11 +72,14 @@ public class Driver {
                                 String name = sc.next();
                                 System.out.println("Enter customer Address");
                                 String address = sc.next();
-                                Customer c = new Customer(id, name, address);
+                                Customer3 c = new Customer3(id, name, address);
                                 st1.push(c);
                                 break;
                             case 2:
                                 st1.pop();
+                                break;
+                            case 3:
+                                st1.display();
                                 break;
                             case 0:
                                 flag2 = false;

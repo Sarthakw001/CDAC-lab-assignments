@@ -1,16 +1,16 @@
 package core;
 
 public class FixedStack implements Stack {
-    private Customer[] cst;
+    private Customer3[] cst;
     private int top;
 
     public FixedStack() {
-        cst = new Customer[STACK_SIZE];
+        cst = new Customer3[STACK_SIZE];
         this.top = -1;
     }
 
     @Override
-    public void push(Customer c) {
+    public void push(Customer3 c) {
         if ((top + 1) < cst.length) {
             cst[top + 1] = c;
             top++;
@@ -27,6 +27,13 @@ public class FixedStack implements Stack {
             System.out.println(cst[top]);
             cst[top] = null;
             top--;
+        }
+    }
+
+    @Override
+    public void display(){
+        for(Customer3 c : cst){
+            System.out.println(c);
         }
     }
 }
