@@ -56,7 +56,7 @@
 
 27. select w.first_name,w.last_name from worker w inner join worker w1 on w.salary = w1.salary and w.worker_id <> w1.worker_id;
 
-28. select max(salary) from worker where salary not in (select max(salary) from worker);
+28. select max(salary) from worker where salary not in (select max(salary) from worker); -- select min(salary) from (select distinct salary from worker order by ,salary desc) where rownum < 3;
 
 29. select * from worker as w inner join bonus as b on w.worker_id = b.worker_ref_id;
 
@@ -74,7 +74,7 @@
 
 36. select first_name,last_name from worker w where 
 
-37. 
+37. select top 3 salary from worker order by salary desc;
 
 38. select department,sum(salary) from worker group by department; 
 
