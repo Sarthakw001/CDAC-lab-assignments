@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 import core.Customer;
 import customException.CustomerException;
-import utils.CustomerValidation;
+import utils.CustomerValidation1;
 
 class testCustomer {
     public static void main(String[] args) {
@@ -32,7 +32,7 @@ class testCustomer {
                         System.out.println("Enter Registration Amount");
                         double registrationAmount = sc.nextDouble();
 
-                        Customer cv = CustomerValidation.validateUser(firstName, lastName, email, password, dateOfBirth,
+                        Customer cv = CustomerValidation1.validateUser(firstName, lastName, email, password, dateOfBirth,
                                 registrationAmount, customers);
 
                         customers.add(cv);

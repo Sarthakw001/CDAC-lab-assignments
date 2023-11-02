@@ -7,7 +7,7 @@ import core.Customer;
 import core.ServicePlan;
 import customException.CustomerException;
 
-public class CustomerValidation {
+public class CustomerValidation1 {
     public static void duplicateUser(String email, List<Customer> customers) throws CustomerException {
         Customer newCustomer = new Customer(email);
         if (customers.contains(newCustomer)) {
