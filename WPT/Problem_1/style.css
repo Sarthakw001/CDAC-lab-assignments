@@ -1,0 +1,52 @@
+.resume{
+    text-align: center;
+}
+.header{
+    font-style: italic;
+}
+th{
+    /* border: 1px solid black; */
+    text-align: left;
+    width: 200px;
+}
+td{
+    /* border: 1px solid black; */
+    width: 200px;
+}
+.skill{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.skills{
+    font-size: 15px;
+    font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
