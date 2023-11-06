@@ -1,0 +1,73 @@
+.navbar{
+    padding: 5px;
+    margin-left: 12px;
+    background: aqua;
+    display: flex;
+    list-style: none;
+    gap: 60px;
+    color: white;
+}
+.heading{
+   /* border: 1px solid black; */
+   text-align: end;
+   line-height: 6px;
+}
+table{ 
+    width: 100%;
+    table-layout: fixed;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th,td{
+    vertical-align: top;
+    border: 1px solid black;
+}
+.time{
+    background-color: aqua;
+    border: 2px solid black;
+    text-align: center;
+    color: white;
+}
+.capacity{
+    padding: 15px;
+    width: 30%;
+    padding: 15px;
+    border: none;
+}
+.room{
+    width: 160px;
+    border: none;
+}
+.room-capacity{
+    border: none;
+    width: 250px;
+}
+.content{
+    /* border: 1px solid black; */
+    display: flex;
+    margin-top: 30px;
+}
+.para{
+    margin-left: 10px;
+    /* border: 1px solid black; */
+    width: 30%;
+    font-size: 20px;
+    
+}
+.room-capacity-table{
+    padding: 15px;
+    width: 28%;
+    border: 2px solid magenta;
+    border-radius: 28px;
+    box-shadow: 5px 5px lightgrey;
+    margin-left: 230px;
+    
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    background: aqua;
+    gap: 20px;
+    padding: 5px;
+    color: white;
+}
