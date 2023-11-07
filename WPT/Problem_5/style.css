@@ -1,0 +1,6 @@
+table,td{
+    border-collapse: collapse;
+    border: 2px solid black;
+    table-layout: fixed;
+    background-color: rgb(253, 192, 213);
+}

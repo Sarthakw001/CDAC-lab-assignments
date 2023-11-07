@@ -1,0 +1,30 @@
+.para-1{
+    margin-bottom: 50px;
+}
+.img-1{
+    border: 3px solid black;
+    width: 700px;
+    height: 200px;
+    border-radius: 50%;
+}
+.section-2{
+    margin-bottom: 30px;
+    display: flex;
+    gap: 40px;
+}
+.para-2{
+    margin-top: 20px;
+    text-align: justify;
+}
+.para-3{
+    margin-top: 40px;
+    text-align: justify;
+}
+.section-3{
+    display: flex;
+    gap: 40px;
+}
+.img-2{
+    width: 350px;
+    height: 400px;
+}

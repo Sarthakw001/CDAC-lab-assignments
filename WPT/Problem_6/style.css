@@ -1,0 +1,29 @@
+table{
+    width: 50%;
+}
+.tr{
+    height: 80px;
+}
+.tr-1{
+    height: 50px;
+}
+.section{
+    margin-top: 55px;
+    display: flex;
+    gap: 50px;
+}
+.section-1{
+    width: 30%;
+    padding: 20px;
+    border: 1px solid black;
+}
+.section-2{
+    margin-top: 60px;
+}
+
+.section-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
