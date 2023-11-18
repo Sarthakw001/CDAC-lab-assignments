@@ -18,4 +18,7 @@ public interface UserDao {
 
 	// add a method to authenticate user
 	User authenticateUser(String email, String pwd) throws SQLException;
+	
+	// getAll users
+	List<User> getAllCandidate() throws SQLException;
 }

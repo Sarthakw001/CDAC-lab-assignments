@@ -4,6 +4,9 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Date;
 import java.sql.SQLException;
+import java.time.LocalDate;
+import java.time.Period;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -13,7 +16,7 @@ import dao.UserDaoImpl;
 import pojos.User;
 
 
-@WebServlet("/RegistrationServlet")
+@WebServlet("/Registration")
 public class RegistrationServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	UserDaoImpl usd;
@@ -42,8 +45,7 @@ public class RegistrationServlet extends HttpServlet {
 		if(isValidAge(dob)) {
 			try {
 				usd.registerNewVoter(new User(firstName,lastName,email,password,Date.valueOf(dob)));
-				out.print("<h1>Voter Registered.........<a href=\"login\">Login please.......</a></h1>");
-				
+				out.print("<h1>Voter Registered..........</a></h1>");
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}
@@ -54,8 +56,13 @@ public class RegistrationServlet extends HttpServlet {
 
 	private boolean isValidAge(String dob) {
 		
+		LocalDate dob1 = LocalDate.parse(dob);
+		LocalDate currDate = LocalDate.now();
+		
+		int age = Period.between(dob1, currDate).getYears();
+		if(age >= 18){
+			return true;
+		}
 		return false;
 	}
-	
-
 }

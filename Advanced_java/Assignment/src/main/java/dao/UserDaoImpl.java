@@ -14,7 +14,7 @@ import utils.DBUtils;
 public class UserDaoImpl implements UserDao {
 
 	private Connection cn;
-	private PreparedStatement pst1, pst2, pst3, pst4;
+	private PreparedStatement pst1, pst2, pst3, pst4,pst5;
 
 	public UserDaoImpl() throws SQLException {
 		cn = DBUtils.openConnection();
@@ -23,6 +23,7 @@ public class UserDaoImpl implements UserDao {
 		pst2 = cn.prepareStatement("insert into users values(default,?,?,?,?,?,?,?)");
 		pst3 = cn.prepareStatement("delete from users where id = ?");
 		pst4 = cn.prepareStatement("select * from users where email = ? and password = ?");
+		pst5 = cn.prepareStatement("select * from users");
 	}
 
 	@Override
@@ -45,7 +46,7 @@ public class UserDaoImpl implements UserDao {
 		pst2.setString(2, newVoter.getLastName());
 		pst2.setString(3, newVoter.getEmail());
 		pst2.setString(4, newVoter.getPassword());
-		pst2.setString(5, newVoter.getDob().toString());
+		pst2.setDate(5, newVoter.getDob());
 		pst2.setBoolean(6, false);
 		pst2.setString(7, "voter");
 
@@ -75,6 +76,19 @@ public class UserDaoImpl implements UserDao {
 			}
 		}
 		return null;
+	}
+	
+	@Override
+	public List<User> getAllCandidate() throws SQLException{
+		
+		List<User> users = new ArrayList<>();
+		try(ResultSet rst = pst5.executeQuery()){
+			while(rst.next()) {
+				users.add(new User(rst.getInt(1), rst.getString(2), rst.getString(3), rst.getString(4), rst.getDate(6),
+						rst.getBoolean(7), rst.getString(8)));
+			}
+		}
+		return users;
 	}
 	
 	public void cleanUp() throws SQLException {
