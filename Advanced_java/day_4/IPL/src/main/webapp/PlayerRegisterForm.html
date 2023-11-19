@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+</head>
+
+<body>
+
+	<h1>
+		Player Register Form
+	</h1>
+
+	<form method="post" action="PlayerRegistration">
+		<table>
+			<tr>
+				<td>Choose the team :</td>
+				<td>
+					<select name="abbrevation">
+						<option value="MI">M.I</option>
+						<option value="CSK">C.S.K</option>
+						<option value="KKR">K.K.R</option>
+						<option value="RCB">R.C.B</option>
+						<option value="RR">R.R</option>
+					</select>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>Name : </td>
+				<td>
+					<input type="text" name="name">
+				</td>
+			</tr>
+			<tr>
+				<td>Date of Birth : </td>
+				<td>
+					<input type="date" name="dob">
+				</td>
+			</tr>
+			<tr>
+				<td>Batting Avg : </td>
+				<td>
+					<input type="number" name="battingAvg">
+				</td>
+			</tr>
+			<tr>
+				<td>Wickets taken : </td>
+				<td>
+					<input type="number" name="wicketsTaken">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="submit" value="Register">
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+
+</html>
