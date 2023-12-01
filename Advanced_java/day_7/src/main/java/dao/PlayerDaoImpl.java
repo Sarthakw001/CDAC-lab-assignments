@@ -32,5 +32,4 @@ public class PlayerDaoImpl implements PlayerDao {
 		}
 		return mesg;
 	}
-
 }
