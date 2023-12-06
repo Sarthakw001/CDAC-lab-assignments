@@ -111,6 +111,4 @@ public class Project extends BaseEntity {
 			return false;
 		return true;
 	}
-	
-
 }

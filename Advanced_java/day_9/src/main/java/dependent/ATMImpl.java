@@ -8,7 +8,7 @@ public class ATMImpl implements ATM {
 	private CustomberNotificationService alert;
 	//private double cash;
 	
-	private ATMImpl ( CustomberNotificationService a1) {
+	private ATMImpl (CustomberNotificationService a1) {
 		this.alert = a1;
 		System.out.println("in cnstr of " + getClass().getName() + " " + alert);
 	}
