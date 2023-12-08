@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "/Users/sarthakb/Desktop/CDAC-lab-assignments/dot_net/Assignment_1/Assignment_1.csproj": {}
+    "/Users/sarthakb/Desktop/CDAC-lab-assignments/dot_net/Assignment_1/Assignment_1_Employee.csproj": {}
   },
   "projects": {
-    "/Users/sarthakb/Desktop/CDAC-lab-assignments/dot_net/Assignment_1/Assignment_1.csproj": {
+    "/Users/sarthakb/Desktop/CDAC-lab-assignments/dot_net/Assignment_1/Assignment_1_Employee.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/sarthakb/Desktop/CDAC-lab-assignments/dot_net/Assignment_1/Assignment_1.csproj",
-        "projectName": "Assignment_1",
-        "projectPath": "/Users/sarthakb/Desktop/CDAC-lab-assignments/dot_net/Assignment_1/Assignment_1.csproj",
+        "projectUniqueName": "/Users/sarthakb/Desktop/CDAC-lab-assignments/dot_net/Assignment_1/Assignment_1_Employee.csproj",
+        "projectName": "Assignment_1_Employee",
+        "projectPath": "/Users/sarthakb/Desktop/CDAC-lab-assignments/dot_net/Assignment_1/Assignment_1_Employee.csproj",
         "packagesPath": "/Users/sarthakb/.nuget/packages/",
         "outputPath": "/Users/sarthakb/Desktop/CDAC-lab-assignments/dot_net/Assignment_1/obj/",
         "projectStyle": "PackageReference",

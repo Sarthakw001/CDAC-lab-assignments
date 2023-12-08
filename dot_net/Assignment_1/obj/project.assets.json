@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/sarthakb/Desktop/CDAC-lab-assignments/dot_net/day_2A/Assignment_1.csproj",
-      "projectName": "Assignment_1",
-      "projectPath": "/Users/sarthakb/Desktop/CDAC-lab-assignments/dot_net/day_2A/Assignment_1.csproj",
+      "projectUniqueName": "/Users/sarthakb/Desktop/CDAC-lab-assignments/dot_net/Assignment_1/Assignment_1_Employee.csproj",
+      "projectName": "Assignment_1_Employee",
+      "projectPath": "/Users/sarthakb/Desktop/CDAC-lab-assignments/dot_net/Assignment_1/Assignment_1_Employee.csproj",
       "packagesPath": "/Users/sarthakb/.nuget/packages/",
-      "outputPath": "/Users/sarthakb/Desktop/CDAC-lab-assignments/dot_net/day_2A/obj/",
+      "outputPath": "/Users/sarthakb/Desktop/CDAC-lab-assignments/dot_net/Assignment_1/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/sarthakb/.nuget/NuGet/NuGet.Config"

@@ -1,4 +1,4 @@
-﻿namespace Assignment_1_Employee
+﻿namespace Assignment_2_Array
 {
     public class Employee
     {

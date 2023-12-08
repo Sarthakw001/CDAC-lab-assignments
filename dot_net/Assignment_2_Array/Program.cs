@@ -1,5 +1,4 @@
-﻿using Assignment_1;
-namespace Assignment_3;
+﻿namespace Assignment_2_Array;
 
 class Program
 {

@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 25.0.1706.7
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment_1", "Assignment_1.csproj", "{9DAD967F-2269-4745-8A08-07F83C8ED83F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment_1_Employee", "Assignment_1_Employee.csproj", "{9DAD967F-2269-4745-8A08-07F83C8ED83F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment_2", "..\Assignment_2\Assignment_2.csproj", "{DB877BF1-459B-429B-9FE0-D7DAF9196CD9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment_2_Inheritance", "..\Assignment_2\Assignment_2_Inheritance.csproj", "{DB877BF1-459B-429B-9FE0-D7DAF9196CD9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment_3", "..\Assignment_3\Assignment_3.csproj", "{FF3FA0D3-D3DC-41EE-B359-025C446B8029}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment_2_Array", "..\Assignment_3\Assignment_2_Array.csproj", "{FF3FA0D3-D3DC-41EE-B359-025C446B8029}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
