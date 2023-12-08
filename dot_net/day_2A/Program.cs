@@ -1,21 +1,21 @@
-﻿namespace day_2A;
-
-class Program
+﻿namespace Assignment_1
 {
-    static void Main(string[] args)
+    class Program
     {
-        Employee o1 = new Employee();
-        Employee o2 = new Employee();
-        Employee o3 = new Employee();
+        static void Main(string[] args)
+        {
+            Employee o1 = new();
+            Employee o2 = new();
+            Employee o3 = new();
 
-        Console.WriteLine(o1.EmpNo);
-        Console.WriteLine(o2.EmpNo);
-        Console.WriteLine(o3.EmpNo);
+            Console.WriteLine(o1.EmpNo);
+            Console.WriteLine(o2.EmpNo);
+            Console.WriteLine(o3.EmpNo);
 
 
-        /*Console.WriteLine(o3.EmpNo);
-        Console.WriteLine(o2.EmpNo);
-        Console.WriteLine(o1.EmpNo);*/
+            /*Console.WriteLine(o3.EmpNo);
+            Console.WriteLine(o2.EmpNo);
+            Console.WriteLine(o1.EmpNo);*/
+        }
     }
 }
-

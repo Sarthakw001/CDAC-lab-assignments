@@ -1,11 +1,11 @@
-﻿namespace day_2A
+﻿namespace Assignment_1
 {
     public class Employee
     {
         private static int counter;
 
         private string name;
-        internal int EmpNo { get; }
+        public int EmpNo { get; }
         private decimal basic;
         private short deptNo;
 
@@ -32,7 +32,7 @@
         {
             set
             {
-                if (value > 0 && value < 10)
+                if (value > 5000 && value < 20000)
                 {
                     basic = value;
                 }
@@ -58,7 +58,7 @@
             }
         }
 
-        public Employee(string name = "", decimal basic = 1, short deptNo = 1)
+        public Employee(string name = "", decimal basic = 5001, short deptNo = 1)
         {
             counter++;
             this.name = name;
@@ -67,12 +67,15 @@
             this.deptNo = deptNo;
         }
 
-        internal decimal GetNetSalary()
+        public decimal GetNetSalary()
         {
-            decimal basicSalary = 75000;
-            return 9 / 10 * basicSalary;
+            return 2 * basic;
         }
 
+        public override string ToString()
+        {
+            return this.name + " " + this.basic + " " + this.deptNo;
+        }
     }
 }
 

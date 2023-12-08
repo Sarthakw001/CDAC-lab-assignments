@@ -1,0 +1,15 @@
+/Users/sarthakb/Desktop/CDAC-lab-assignments/dot_net/day_2A/bin/Debug/net7.0/Assignment_1
+/Users/sarthakb/Desktop/CDAC-lab-assignments/dot_net/day_2A/bin/Debug/net7.0/Assignment_1.deps.json
+/Users/sarthakb/Desktop/CDAC-lab-assignments/dot_net/day_2A/bin/Debug/net7.0/Assignment_1.runtimeconfig.json
+/Users/sarthakb/Desktop/CDAC-lab-assignments/dot_net/day_2A/bin/Debug/net7.0/Assignment_1.dll
+/Users/sarthakb/Desktop/CDAC-lab-assignments/dot_net/day_2A/bin/Debug/net7.0/Assignment_1.pdb
+/Users/sarthakb/Desktop/CDAC-lab-assignments/dot_net/day_2A/obj/Debug/net7.0/Assignment_1.csproj.AssemblyReference.cache
+/Users/sarthakb/Desktop/CDAC-lab-assignments/dot_net/day_2A/obj/Debug/net7.0/Assignment_1.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sarthakb/Desktop/CDAC-lab-assignments/dot_net/day_2A/obj/Debug/net7.0/Assignment_1.AssemblyInfoInputs.cache
+/Users/sarthakb/Desktop/CDAC-lab-assignments/dot_net/day_2A/obj/Debug/net7.0/Assignment_1.AssemblyInfo.cs
+/Users/sarthakb/Desktop/CDAC-lab-assignments/dot_net/day_2A/obj/Debug/net7.0/Assignment_1.csproj.CoreCompileInputs.cache
+/Users/sarthakb/Desktop/CDAC-lab-assignments/dot_net/day_2A/obj/Debug/net7.0/Assignment_1.dll
+/Users/sarthakb/Desktop/CDAC-lab-assignments/dot_net/day_2A/obj/Debug/net7.0/refint/Assignment_1.dll
+/Users/sarthakb/Desktop/CDAC-lab-assignments/dot_net/day_2A/obj/Debug/net7.0/Assignment_1.pdb
+/Users/sarthakb/Desktop/CDAC-lab-assignments/dot_net/day_2A/obj/Debug/net7.0/Assignment_1.genruntimeconfig.cache
+/Users/sarthakb/Desktop/CDAC-lab-assignments/dot_net/day_2A/obj/Debug/net7.0/ref/Assignment_1.dll
