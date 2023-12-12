@@ -8,24 +8,26 @@
     "net7.0": []
   },
   "packageFolders": {
-    "/Users/sarthakb/.nuget/packages/": {}
+    "C:\\Users\\dac\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/sarthakb/Desktop/CDAC-lab-assignments/dot_net/Assignment_2/Assignment_2_Inheritance.csproj",
+      "projectUniqueName": "F:\\CDAC-labAssignments\\CDAC-lab-assignments\\dot_net\\Assignment_2_Inheritance\\Assignment_2_Inheritance.csproj",
       "projectName": "Assignment_2_Inheritance",
-      "projectPath": "/Users/sarthakb/Desktop/CDAC-lab-assignments/dot_net/Assignment_2/Assignment_2_Inheritance.csproj",
-      "packagesPath": "/Users/sarthakb/.nuget/packages/",
-      "outputPath": "/Users/sarthakb/Desktop/CDAC-lab-assignments/dot_net/Assignment_2/obj/",
+      "projectPath": "F:\\CDAC-labAssignments\\CDAC-lab-assignments\\dot_net\\Assignment_2_Inheritance\\Assignment_2_Inheritance.csproj",
+      "packagesPath": "C:\\Users\\dac\\.nuget\\packages\\",
+      "outputPath": "F:\\CDAC-labAssignments\\CDAC-lab-assignments\\dot_net\\Assignment_2_Inheritance\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/sarthakb/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\dac\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -59,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.311/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
       }
     }
   }
