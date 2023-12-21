@@ -27,7 +27,7 @@ public class CircularQueue {
     }
 
     public void enQueue(int element) {
-        if (isEmpty())
+        if (isFull())
             System.out.println("Queue Full");
         else {
             if (front == -1)
