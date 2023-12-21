@@ -1,8 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "jCaeGku4NrlPkX+Cm6ciPBXx5nY8Prz/V5YcfM6g2niABHY1IFjuxU41jKiguMuBFn3+vxgbXDMavG9dJkspyQ==",
-  "success": true,
-  "projectFilePath": "/Users/sarthakb/Desktop/CDAC-lab-assignments/dot_net/Assignment_3/Assignment_2_Array.csproj",
+  "dgSpecHash": "WhuNt8+8gpO+JYpuDdJ10xaHLw32uQvi7ZZsKbeDzqB4FC4Lk0/rrBKsAIbryR7ZTCY2DGzCinzC09B+mqZuQA==",
+  "success": false,
+  "projectFilePath": "F:\\CDAC-labAssignments\\CDAC-lab-assignments\\dot_net\\Assignment_2_Array\\Assignment_2_Array.csproj",
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'F:\\CDAC-labAssignments\\CDAC-lab-assignments\\dot_net\\day_2A\\Assignment_1.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "F:\\CDAC-labAssignments\\CDAC-lab-assignments\\dot_net\\day_2A\\Assignment_1.csproj",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    }
+  ]
 }

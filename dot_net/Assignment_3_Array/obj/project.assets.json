@@ -5,33 +5,41 @@
   },
   "libraries": {},
   "projectFileDependencyGroups": {
-    "net7.0": []
+    "net7.0": [
+      "F:\\CDAC-labAssignments\\CDAC-lab-assignments\\dot_net\\day_2A\\Assignment_1.csproj"
+    ]
   },
   "packageFolders": {
-    "/Users/sarthakb/.nuget/packages/": {}
+    "C:\\Users\\dac\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/sarthakb/Desktop/CDAC-lab-assignments/dot_net/Assignment_3/Assignment_2_Array.csproj",
+      "projectUniqueName": "F:\\CDAC-labAssignments\\CDAC-lab-assignments\\dot_net\\Assignment_2_Array\\Assignment_2_Array.csproj",
       "projectName": "Assignment_2_Array",
-      "projectPath": "/Users/sarthakb/Desktop/CDAC-lab-assignments/dot_net/Assignment_3/Assignment_2_Array.csproj",
-      "packagesPath": "/Users/sarthakb/.nuget/packages/",
-      "outputPath": "/Users/sarthakb/Desktop/CDAC-lab-assignments/dot_net/Assignment_3/obj/",
+      "projectPath": "F:\\CDAC-labAssignments\\CDAC-lab-assignments\\dot_net\\Assignment_2_Array\\Assignment_2_Array.csproj",
+      "packagesPath": "C:\\Users\\dac\\.nuget\\packages\\",
+      "outputPath": "F:\\CDAC-labAssignments\\CDAC-lab-assignments\\dot_net\\Assignment_2_Array\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/sarthakb/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\dac\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "F:\\CDAC-labAssignments\\CDAC-lab-assignments\\dot_net\\day_2A\\Assignment_1.csproj": {
+              "projectPath": "F:\\CDAC-labAssignments\\CDAC-lab-assignments\\dot_net\\day_2A\\Assignment_1.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -59,8 +67,19 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.311/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'F:\\CDAC-labAssignments\\CDAC-lab-assignments\\dot_net\\day_2A\\Assignment_1.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "F:\\CDAC-labAssignments\\CDAC-lab-assignments\\dot_net\\day_2A\\Assignment_1.csproj",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    }
+  ]
 }

@@ -8,4 +8,10 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Assignment_2_Array
+<<<<<<< HEAD:dot_net/Assignment_3_Array/obj/Debug/net7.0/Assignment_2_Array.GeneratedMSBuildEditorConfig.editorconfig
 build_property.ProjectDir = /Users/sarthakb/Desktop/CDAC-lab-assignments/dot_net/Assignment_2_Array/
+=======
+build_property.ProjectDir = F:\CDAC-labAssignments\CDAC-lab-assignments\dot_net\Assignment_2_Array\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+>>>>>>> ac5865655c747815d76a021264da662d5990612d:dot_net/Assignment_2_Array/obj/Debug/net7.0/Assignment_2_Array.GeneratedMSBuildEditorConfig.editorconfig
