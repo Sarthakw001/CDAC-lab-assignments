@@ -1,0 +1,16 @@
+body{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+fieldset{
+    background-color: rgb(62, 62, 199);
+}
+legend{
+    color: black;
+}
+table{
+    padding: 50px;
+}
+
